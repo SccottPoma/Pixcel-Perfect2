@@ -134,6 +134,11 @@ body {
     .body {
         padding-top: 80px;
     }
+    .div-container {
+        display: flex;
+        justify-content: center;
+        gap: 125px;
+    }
     .header {
         text-align: left;
     }
@@ -168,10 +173,5 @@ body {
     }
     .ranking-card:nth-child(3) {
         margin-left: 100px;
-    }
-    .div-container {
-        display: flex;
-        justify-content: center;
-        gap: 125px;
     }
 }
