@@ -1,0 +1,177 @@
+/* -------variables-------- */
+:root {
+    --color-primary-magenta: hsl(300, 43%, 22%);
+    --color-primary-pink: hsl(333, 80%, 67%);
+    --color-neutral-magenta: hsl(303, 10%, 53%);
+    --color-neutral-magenta-light: hsl(300, 24%, 96%);
+    --color-neutral-white: hsl(0, 0%, 100%);
+    --weight--light: 400;
+    --weight--medium: 500;
+    --weight--bold: 700;
+}
+/* -------reset---------- */
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-size: 15px;
+    font-family: 'League Spartan', sans-serif;
+}
+/* -------Mobile--------- */
+.body {
+    padding: 55px 28px;
+    background-color: var(--color-neutral-white);
+}
+.header {
+    text-align: center;
+}
+.principal-title {
+    width: min(100%, 319px);
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: var(--weight--bold);
+    padding: 25px;
+    font-size: 2.5rem;
+    color: var(--color-primary-magenta);
+    line-height: 0.8;
+    letter-spacing: -1px;
+}
+.principal-text {
+    width: min(100%, 681px);
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: var(--weight--medium);
+    font-size: 1.2rem;
+    line-height: 1.3;
+    color: var(--color-neutral-magenta);
+    letter-spacing: -1px;
+    margin-bottom: 40px;
+}
+.ranking-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 50px;
+}
+.ranking-card {
+    width: min(100%, 319px);
+    padding: 8px;
+    text-align: center;
+    background-color: var(--color-neutral-magenta-light);
+    border-radius: 8px;
+}
+.ranking-card__img {
+    padding: 10px 2px;
+}
+.ranking-card__text {
+    font-weight: var(--weight--bold);
+    color: var(--color-primary-magenta);
+    font-size: 1.1rem;
+    padding-bottom: 8px;
+}
+.cards-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+.card {
+    width: min(100%, 319px);
+    height: 264px;
+    padding: 38px 35px;
+    background-color: var(--color-primary-magenta);
+    border-radius: 8px;
+}
+.card__div {
+    display: flex;
+}
+.card__img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.card__title {
+    padding: 0px 20px;
+    font-weight: var(--weight--medium);
+    font-size: 1.1rem;
+    line-height: 1.3;
+    color: var(--color-neutral-white);
+}
+.card__title--light {
+    font-weight: var(--weight--light);
+    color: var(--color-primary-pink);
+}
+.card__text {
+    padding-top: 20px;
+    font-weight: var(--weight--light);
+    font-size: 1rem;
+    line-height: 1.4;
+    color: var(--color-neutral-white);
+}
+
+/* --------Desktop--------- */
+@media screen and (min-width: 1043px) {
+    .cards-section {
+        gap: 25px;
+    }
+    .card:nth-child(2) {
+        margin-top: 15px;
+    }
+    .card:nth-child(3) {
+        margin-top: 30px;
+    }
+    .card:nth-child(1),
+    .card:nth-child(2),
+    .card:nth-child(3) {
+        width: min(100%, 353px);
+        height: 240px;
+    }
+}
+
+@media screen and (min-width: 1165px) {
+    .body {
+        padding-top: 80px;
+    }
+    .header {
+        text-align: left;
+    }
+    .principal-title {
+        width: 350px;
+        font-size: 3rem;
+        padding: 25px 0px;
+        margin: 0;
+    }
+    .principal-text {
+        width: 400px;
+        margin-bottom: 80px;
+    }
+    .ranking-section {
+        display: grid;
+        grid-row: repeat (1, 1fr);
+        margin: 50px 0 0;
+    }
+    .ranking-card {
+        padding: 18px 25px;
+        width: 450px;
+        display: flex;
+    }
+    .ranking-card__text {
+        padding: 0 20px;
+    }
+    .ranking-card__img {
+        padding: 0 4px;
+    }
+    .ranking-card:nth-child(2) {
+        margin-left: 50px;
+    }
+    .ranking-card:nth-child(3) {
+        margin-left: 100px;
+    }
+    .div-container {
+        display: flex;
+        justify-content: center;
+        gap: 125px;
+    }
+}
